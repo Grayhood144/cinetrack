@@ -1,0 +1,66 @@
+.page { min-height: 100vh; background: #0d0d14; }
+
+.search-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.search-header { margin-bottom: 2rem; }
+
+.search-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.search-bar {
+  position: relative;
+  max-width: 540px;
+}
+
+.search-bar input {
+  width: 100%;
+  background: #16161f;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  padding: 0.85rem 3rem 0.85rem 1.1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.search-bar input:focus { border-color: #e50914; }
+
+.search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #9a9aaa;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.2rem;
+}
+
+.loading-msg, .empty-msg {
+  color: #9a9aaa;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .search-container { padding: 1rem; }
+  .card-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.8rem; }
+}
