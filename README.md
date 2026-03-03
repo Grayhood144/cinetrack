@@ -69,13 +69,13 @@ Open [http://localhost:5173](http://localhost:5173)
 
 ## Known Bugs / Limitations
 
-- Week 7: App is a landing page only — authentication and full features will be built in Week 8
 - TMDB images require a valid API key; without one, movie posters will not load
+- Genre filtering on watchlist uses raw genre IDs (from TMDB) rather than genre names
 
 ---
 
 ## What I Learned
 
-*(To be completed after Week 8 build)*
+Working with Claude Code on this project changed how I think about development. The biggest lesson was how much planning upfront — designing the Firestore schema, deciding on the feature list, choosing Firebase over localStorage — saved time during the actual build. By the time I was writing components, all the hard decisions were already made.
 
-Working with AI tools like Claude Code changed how I approach development. Instead of writing boilerplate from scratch, I focused on describing what I wanted and iterating on the output — learning the patterns along the way. The biggest insight was how much planning the data model upfront (Firestore schema, feature scope) saved time during actual coding.
+I also learned that AI tools are most useful when you ask specific questions and give real context. When I said "I need filter and sort on the watchlist page," the output was much better than "make the watchlist better." The iterative back-and-forth — asking follow-up questions, pushing back on suggestions I didn't need — produced cleaner code than any single big prompt would have.
